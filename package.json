@@ -1,0 +1,42 @@
+{
+  "name": "react-tilted",
+  "description": "A smooth 3D tilt for React",
+  "version": "1.0.0",
+  "main": "dist/react-tilted.js",
+  "umd:main": "dist/react-tilted.umd.js",
+  "module": "dist/react-tilted.m.js",
+  "source": "src/index.js",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react-tilted",
+    "tilt",
+    "effect",
+    "vanilla",
+    "js",
+    "60fps",
+    "smooth",
+    "tilt.js"
+  ],
+  "scripts": {
+    "build": "microbundle -o dist/ --sourcemap false --no-compress --jsx React.createElement",
+    "dev": "microbundle watch -o dist/ --sourcemap false --no-compress --jsx React.createElement",
+    "lint": "standard --fix src/*.js"
+  },
+  "dependencies": {
+    "vanilla-tilt": "^1.7.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "microbundle": "^0.11.0",
+    "standard": "^14.3.1"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "peerDependencies": {
+    "react": "^16"
+  }
+}
